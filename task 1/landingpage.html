@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landign Page</title>
+    <style type="text/css">
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      header {
+        width: 100%;
+        height: 100vh;
+        background-image: url("./23650.jpg");
+        background-size: cover;
+        font-family: sans-serif;
+      }
+
+      nav {
+        width: 100%;
+        height: 100px;
+        color: rgb(252, 251, 251);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .logo {
+        font-size: 2em;
+        letter-spacing: 2px;
+      }
+      .menu a {
+        text-decoration: none;
+        color: rgb(246, 246, 246);
+        padding: 10px 20px;
+        font-size: 20px;
+        position: relative;
+      }
+      .menu a:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        border-bottom: 2px solid rgb(248, 23, 23);
+        transition: 0.4s linear;
+      }
+      .menu a:hover:before {
+        width: 90%;
+      }
+      .register a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        padding: 10px 20px;
+        font-size: 20px;
+        background: rgb(248, 23, 23);
+        border-radius: 10px;
+        transition: 0.4s;
+      }
+      .register a:hover {
+        background: transparent;
+        border: 1px solid rgb(248, 23, 23);
+        color: rgb(252, 250, 250);
+      }
+      .h-text {
+        max-width: 650px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: rgb(253, 253, 253);
+      }
+      .h-text span {
+        letter-spacing: 5px;
+      }
+      .h-text h1 {
+        font-size: 3.5em;
+      }
+      .h-text a {
+        text-decoration: none;
+        background-color: rgb(248, 23, 23);
+        color: rgb(244, 241, 241);
+        padding: 10px 20px;
+        letter-spacing: 4px;
+        border-radius: 10px;
+        transition: 0.4s;
+      }
+      .h-text a:hover {
+        background: transparent;
+        border: 1px solid rgb(248, 23, 23);
+        color: rgb(247, 244, 244);
+      }
+
+      footer {
+        padding: 1.5rem 10%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      footer p {
+        color: #0c0c0c;
+        background-image: none;
+      }
+
+      /* Media Queries */
+      @media (max-width: 768px) {
+        nav {
+          flex-direction: column;
+          height: auto;
+          padding: 20px 0;
+        }
+        .menu {
+          flex-direction: column;
+          gap: 10px;
+        }
+        .menu a {
+          font-size: 18px;
+          padding: 8px 16px;
+        }
+        .register a {
+          font-size: 18px;
+          padding: 8px 16px;
+        }
+        .h-text {
+          width: 90%;
+          padding: 10px;
+        }
+        .h-text h1 {
+          font-size: 2.5em;
+        }
+        .h-text a {
+          padding: 8px 16px;
+          font-size: 18px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .logo {
+          font-size: 1.5em;
+        }
+        .menu a {
+          font-size: 16px;
+          padding: 6px 12px;
+        }
+        .register a {
+          font-size: 16px;
+          padding: 6px 12px;
+        }
+        .h-text h1 {
+          font-size: 2em;
+        }
+        .h-text a {
+          padding: 6px 12px;
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo">M-Images</div>
+
+        <div class="menu">
+          <a href="#">Home</a>
+          <a href="#">3D Images</a>
+          <a href="#">Best Offer's</a>
+          <a href="#">Our Site</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="register">
+          <a href="#">Register</a>
+        </div>
+      </nav>
+
+      <section class="h-text">
+        <span>Wellcome</span>
+        <h1>International Image Agency</h1>
+
+        <br />
+        <a href="#">Select your Image</a>
+      </section>
+    </header>
+
+    <footer>
+      <p class="scroll-scale">
+        Copyrigth &copy; 2024 by Patel || All Rigth Reservd.
+      </p>
+    </footer>
+  </body>
+</html>
